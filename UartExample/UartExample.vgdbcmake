@@ -70,7 +70,12 @@
               <VirtualSourceFolder>
                 <Name>New Virtual Filter</Name>
                 <Subfolders />
-                <Files />
+                <Files>
+                  <string>Led.h</string>
+                  <string>Uart.h</string>
+                  <string>Led.cpp</string>
+                  <string>Uart.cpp</string>
+                </Files>
               </VirtualSourceFolder>
             </Subfolders>
             <Files />

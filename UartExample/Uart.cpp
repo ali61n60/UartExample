@@ -4,7 +4,8 @@
 
 void Uart::UartRxCompleteInterrup(UART_HandleTypeDef *huart1)
 {	
-	HAL_UART_Transmit_IT(huart1, this->uartBuffer, sizeof(this->uartBuffer));
+	uartBuffer[0]++;
+	HAL_UART_Transmit_IT(huart1, this->uartBuffer, sizeof(this->uartBuffer));	
 	this->EnableUsartRxInterrupt();
 }
 

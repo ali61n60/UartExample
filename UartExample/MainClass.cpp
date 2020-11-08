@@ -7,6 +7,6 @@ void MainClass::Init()
 
 void MainClass::RepeatingLoop()
 {	
-	this->led.BlinkPollingMode(100);
+	this->led.BlinkPollingMode(1000);
 }
 
