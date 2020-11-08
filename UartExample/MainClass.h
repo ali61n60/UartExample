@@ -3,9 +3,10 @@
 
 class MainClass
 {
+	
+public:
 	Uart uart;
 	Led led;
-public:
 	void Init();
 	void RepeatingLoop();
 	

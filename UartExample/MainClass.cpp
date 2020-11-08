@@ -1,13 +1,8 @@
 #include "MainClass.h"
 //This function is being called repeatedly in a loop from main 
 void MainClass::Init()
-{
-	//	if (!this->InterruptReadCalled) 
-	//	{
-	//		this ->UsartInterruptModeExample();
-	//	}
-	
-		this->uart.UsartInterruptModeExample();
+{	
+		this->uart.EnableUsartRxInterrupt();
 }
 
 void MainClass::RepeatingLoop()

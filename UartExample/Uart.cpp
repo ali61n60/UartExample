@@ -2,15 +2,14 @@
 #include <usart.h>
 #include "Uart.h"
 
-void Uart::UartRecievedData(UART_HandleTypeDef *huart1)
-{
-	this->InterruptReadCalled = 0;
-	this->uartBuffer[0];
-	HAL_UART_Transmit(huart1, this->uartBuffer, sizeof(this->uartBuffer), HAL_MAX_DELAY);
+void Uart::UartRxCompleteInterrup(UART_HandleTypeDef *huart1)
+{	
+	HAL_UART_Transmit_IT(huart1, this->uartBuffer, sizeof(this->uartBuffer));
+	this->EnableUsartRxInterrupt();
 }
 
 
-void Uart::UsartInterruptModeExample()
+void Uart::EnableUsartRxInterrupt()
 {	
 	HAL_UART_Receive_IT(&huart1, this->uartBuffer, sizeof(this->uartBuffer));
 }

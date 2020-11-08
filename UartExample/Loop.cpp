@@ -13,11 +13,10 @@ extern "C" void Looper()
 	}
 }
 
+//This function is called when UART_RX is completed as interrupt 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart1)
 {
-	//mainObject.UartRecievedData(huart1);
-	int i = 20;
-	int j = 2*i;
+	mainObject.uart.UartRxCompleteInterrup(huart1);
 }	
 
 
