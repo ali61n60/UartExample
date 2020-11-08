@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RELEASE",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UartExample",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BSP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BSP-RELEASE-313a8344e9ba266843a8.json",
+					"name" : "BSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UartExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UartExample-RELEASE-1471777c1a576a3b54c6.json",
+					"name" : "UartExample",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UartExample-bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UartExample-bin-RELEASE-a8b5df28846b7a64b0e4.json",
+					"name" : "UartExample-bin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/Release",
+		"source" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

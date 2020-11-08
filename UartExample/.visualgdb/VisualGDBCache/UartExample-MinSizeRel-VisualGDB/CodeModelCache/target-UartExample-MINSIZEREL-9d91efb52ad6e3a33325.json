@@ -1,0 +1,418 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "UartExample"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_bsp_based_executable",
+			"target_link_libraries",
+			"apply_linker_script"
+		],
+		"files" : 
+		[
+			"C:/Program Files (x86)/Sysprogs/VisualGDB/CMake/embedded/root.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 113,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-Os -DNDEBUG   -fno-exceptions -fno-rtti -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "STM32F103xB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Drivers/STM32F1xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/Drivers/STM32F1xx_HAL_Driver/Src"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				5,
+				6
+			],
+			"traceableCompileCommandFragments" : 
+			[
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mcpu=cortex-m3"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				}
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "BSP::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "UartExample::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Os -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-\"TG:/Stm/Projects/VisualGdb/UartExample/UartExample/STM32F103C8Tx_FLASH.ld\" -Wl,-Map=UartExample.map -mcpu=cortex-m3 -mthumb -Wl,-gc-sections",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"traceableCommandFragments" : 
+		[
+			{
+				"backtrace" : 3,
+				"fragment" : "BSP"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-\"TG:/Stm/Projects/VisualGdb/UartExample/UartExample/STM32F103C8Tx_FLASH.ld\""
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,-Map=UartExample.map"
+			}
+		]
+	},
+	"name" : "UartExample",
+	"nameOnDisk" : "UartExample",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				4,
+				7
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "Loop.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Loop.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "MainClass.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Led.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Uart.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Led.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Uart.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "MainClass.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/system_stm32f1xx.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/startup_stm32f103xb.s.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/stm32f1xx_hal_msp.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/stm32f1xx_it.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/usart.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/gpio.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir/Src/main.c.obj",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -11,7 +11,7 @@ void Uart::UartRxCompleteInterrup(UART_HandleTypeDef *huart1)
 
 void Uart::EnableUsartRxInterrupt()
 {	
-	HAL_UART_Receive_IT(&huart1, this->uartBuffer, sizeof(this->uartBuffer));
+	HAL_UART_Receive_IT(&huart1 , this->uartBuffer, sizeof(this->uartBuffer));
 }
 
 

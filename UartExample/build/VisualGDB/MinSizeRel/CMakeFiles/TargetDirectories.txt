@@ -1,0 +1,5 @@
+G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel/CMakeFiles/BSP.dir
+G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel/CMakeFiles/UartExample.dir
+G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel/CMakeFiles/rebuild_cache.dir
+G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel/CMakeFiles/UartExample-bin.dir
+G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel/CMakeFiles/edit_cache.dir

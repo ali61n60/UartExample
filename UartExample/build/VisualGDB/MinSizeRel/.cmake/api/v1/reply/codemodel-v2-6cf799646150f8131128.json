@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MINSIZEREL",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UartExample",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BSP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BSP-MINSIZEREL-cb730bb7e9a5c68755ae.json",
+					"name" : "BSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UartExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UartExample-MINSIZEREL-9d91efb52ad6e3a33325.json",
+					"name" : "UartExample",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UartExample-bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UartExample-bin-MINSIZEREL-cfcdd64cb83f0ba60ae7.json",
+					"name" : "UartExample-bin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample/build/VisualGDB/MinSizeRel",
+		"source" : "G:/Stm/Projects/VisualGdb/UartExample/UartExample"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
