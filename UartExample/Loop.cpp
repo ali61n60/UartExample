@@ -15,8 +15,29 @@ extern "C" void Looper()
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart1)
 {
-	mainObject.UartRecievedData(huart1);
+	//mainObject.UartRecievedData(huart1);
+	int i = 20;
+	int j = 2*i;
 }	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 ///* USER CODE BEGIN Header */

@@ -8,9 +8,13 @@ class Led
 	
 	void TurnOnLed();  
 	void TurnOffLed();
-	void ToggleLed();
+	
 	
 	
 public:
+	/*
+	 @delay Delay time in millisecond
+	 	 */
 	void BlinkPollingMode(uint32_t delay);
+	void ToggleLed();
 };
