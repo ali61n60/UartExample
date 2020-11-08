@@ -1,5 +1,7 @@
 #include "Loop.h"
 #include "MainClass.h"
+#include "string.h"
+
 
 
 MainClass mainObject;
@@ -14,17 +16,18 @@ extern "C" void Looper()
 }
 
 //This function is called when UART_RX is completed as interrupt 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart1)
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	mainObject.uart.UartRxCompleteInterrup(huart1);
-	
+	mainObject.uart.UartRxCompleteInterrup(huart);	
 }	
 
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	int i = 20;
-	int j = 2*i;
+		const char *Message = "External Interrupt On Switch1 Detected\r\n";
+		size_t length = strlen(Message) + 1;	
+		
+	mainObject.uart.SendData((uint8_t *)Message,length );
 }
 
 

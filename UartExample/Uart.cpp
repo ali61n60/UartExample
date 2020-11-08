@@ -2,10 +2,9 @@
 #include <usart.h>
 #include "Uart.h"
 
-void Uart::UartRxCompleteInterrup(UART_HandleTypeDef *huart1)
+void Uart::UartRxCompleteInterrup(UART_HandleTypeDef *huart)
 {	
-	uartBuffer[0]++;
-	HAL_UART_Transmit_IT(huart1, this->uartBuffer, sizeof(this->uartBuffer));	
+	HAL_UART_Transmit_IT(huart, this->uartBuffer, sizeof(this->uartBuffer));	
 	this->EnableUsartRxInterrupt();
 }
 
@@ -20,7 +19,16 @@ void Uart::EnableUsartRxInterrupt()
 void Uart::UsartPollingModeExample()
 {	
 	HAL_UART_Receive(&huart1, uartBuffer, sizeof(uartBuffer), HAL_MAX_DELAY);
-	uartBuffer[0];
 	HAL_UART_Transmit(&huart1, uartBuffer, sizeof(uartBuffer), HAL_MAX_DELAY);	
+}
+
+void Uart::SendData(uint8_t *data,  uint16_t size)
+{
+	
+		
+	
+	
+	
+	HAL_UART_Transmit(&huart1, data, size, HAL_MAX_DELAY);	
 }
 
